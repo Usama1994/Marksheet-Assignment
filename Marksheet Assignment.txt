@@ -1,0 +1,66 @@
+//https://github.com/Usama1994/Marksheet-Assignment.git
+
+void main (){
+  var isl = 90;
+  var eng = 75;
+  var math = 85;
+  var phy = 60;
+  var chem = 55;
+  //var total_obt = ($isl + math + phy + chem);
+  var sum = (isl + eng + math + phy + chem);  
+  var total_marks = 500;
+  var per = ((sum / total_marks) * 100);
+  
+  print ('                    "Marksheet Assignment"');
+  print ('---------------------------------------------------------------');
+  print ('S.No    |   Subject     |     Total Marks   |   Total Obtained');
+  print ('1)          Islamiat              100                $isl   ');
+  print ('2)          English               100                $eng   ');
+  print ('3)          Mathematics           100                $math  ');
+  print ('4)          Physics               100                $phy   ');
+  print ('5)          Chemisty              100                $chem  ');
+  print ('-----------------------------------------------------------=---');
+  print ('Total Subject   = 6');
+  print ('Total Marks     = $total_marks');
+  print ('Total Obtained  = $sum');
+  //print ('Total Obtained ($isl + $eng + $math + $phy + $chem)');
+  //print ('($sum / $total_marks)' * 100); 
+  print ('Obt. Percentage = $per%');
+  /*(
+  if (per >= 90); {
+    print ('You got A+');
+  }
+    else
+    print ('You got fail') ; 
+  ) */
+  
+  if (per >= 90)
+  {
+    print ('Obtained Grade    = A+');
+  }
+    else if (per >= 80 && per < 90)
+  {
+    print ('Obtained Grade    = A');
+  }
+    else if (per >=70 && per < 80)
+  {
+    print ('Obtained Grade  = B+');
+  }
+    else if (per >=60 && per < 70)
+  {
+    print ('Obtained Grade    = B');
+  }
+    else if (per >=50 && per < 60)
+  {
+    print ('Obtained Grade    = C');
+  }
+  else
+  {
+    print ('Obtained Grade    = Fail');
+  }
+}
+  /*else if (per < 50)
+  {
+    print ('You are Fail');
+  } */
+  //else {print('You are Fail');}
